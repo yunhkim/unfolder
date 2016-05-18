@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B29C316C-8679-4AD8-A2C8-F6A320D880A5}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder -BC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build --check-stamp-file C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCCompiler.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder -BC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build --check-stamp-file C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCCompiler.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder -BC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build --check-stamp-file C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCCompiler.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder -BC:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build --check-stamp-file C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCCompiler.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/ZERO_CHECK.vcxproj">
+      <Project>507CF367-B305-414A-80F8-5096EA237331</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/libs/itree/itree.vcxproj">
+      <Project>501F5DF2-9AFA-408C-81CD-56DE9AC86679</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/src/unfolder.vcxproj">
+      <Project>225DB330-D68C-4AB4-A03E-FBC6A09F3214</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

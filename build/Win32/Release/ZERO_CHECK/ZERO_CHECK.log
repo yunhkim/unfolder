@@ -1,0 +1,16 @@
+﻿Build started 2016-05-18 오전 3:34:06.
+     1>Project "C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/src/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/src/GL/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/src/mathtool/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/src/modelgraph/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/src/util/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/build/libs/itree/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.93

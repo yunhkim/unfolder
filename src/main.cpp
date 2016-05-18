@@ -17,21 +17,26 @@
 
 int main(int argc, char ** argv) {
   if (!parseArg(argc, argv)) {
-    printUsage(argv[0]);
-    return 1;
+	printUsage(argv[0]);
+	return 1;
   }
 
   cout << " - seed = " << config.seed << endl;
   mathtool::srand48(config.seed);
 
-  //
-  readfromfiles();
+  // (yh)
+  if (!config.onlydraw)	  readfromfiles();
+  else   readfromfiles2();
 
   if (config.disable_gui) 
   {
-    // only dump if find an unfolding
-    dumpUnfolding(true);
-    return 0;
+	// only dump if find an unfolding
+	dumpUnfolding(true);
+	return 0;
+  }
+
+  if (config.save_obj){
+	 //finalobjmodel = initobjmodel;
   }
 
   /////////////////////////////////////////////////////////////////

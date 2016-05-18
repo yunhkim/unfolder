@@ -161,6 +161,10 @@ struct model {
 	//build from vertices and faces
 	bool build(const vector<Vector3d>& vertices, const vector<vector<int>>& faces);
 
+	//yh
+	//model* build2(const model& u, const vector<Vector3d>& vertices, const vector<vector<int>>& faces);
+
+
 	//rotate points
 	void rotate(const Matrix2x2& m);
 	void rotate(const Matrix3x3& M);

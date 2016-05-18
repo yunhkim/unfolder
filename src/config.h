@@ -29,72 +29,80 @@ enum class CutHeuristic {
 struct Config {
 public:
   Config() {
-    // flat tree is good for non-convex shapes
-    this->heuristic = CutHeuristic::FLAT_TREE;
+	// flat tree is good for non-convex shapes
+	this->heuristic = CutHeuristic::FLAT_TREE;
 
-    this->max_retries = 100;
-    this->random_baseface = false;
-    this->less_cuts = false;
-    this->seed = time(nullptr);
+	this->max_retries = 100;
+	this->random_baseface = false;
+	this->less_cuts = false;
+	this->seed = time(nullptr);
 		
 		this->ga_config_filename = "unfolding.ga";
-    this->cluster_config_filename = "unfolding.cluster";
+	this->cluster_config_filename = "unfolding.cluster";
 		this->lp_config_filename = "unfolding.lp";
 
-    this->k = -1;
-    this->run = -1;
-    this->scalar_score = false;
+	this->k = -1;
+	this->run = -1;
+	this->scalar_score = false;
 
-    this->quite = false;
+	this->quite = false;
 
-    this->shrink = true;
-    this->find_boundary = true;
-    this->shrink_factor = 0.999;
+	this->shrink = true;
+	this->find_boundary = true;
+	this->shrink_factor = 0.999;
 
-    this->disable_gui = false;
+	this->disable_gui = false;
 
-    this->scale = 200.0;
+	this->scale = 200.0;
 
-    this->dump_labels = true;
+	this->dump_labels = true;
 
-    this->no_tick = false;
+	this->no_tick = false;
 
-    this->use_rapid = false;
+	this->use_rapid = false;
 
-    this->add_tabs = false;
+	this->add_tabs = false;
 
-    this->find_best_base_face = true;
+	this->find_best_base_face = true;
 
-    this->ordered_unfolding = false;
+	this->ordered_unfolding = false;
 
-    this->use_user_vector = false;
+	this->use_user_vector = false;
 
-    this->record_overlap = false;
+	this->record_overlap = false;
 
-    this->dump_wrl = false;
+	this->dump_wrl = false;
 
-    this->label_font_scale = 1.0;
+	this->label_font_scale = 1.0;
 
-    this->max_iterations = INT_MAX;
+	this->max_iterations = INT_MAX;
 
-    this->pixel_checker = false;
+	this->pixel_checker = false;
 
-    this->weighted_dist = false;
+	this->weighted_dist = false;
 
-    this->force_mode = false;
+	this->force_mode = false;
 
-    this->binary_format = false;
+	this->binary_format = false;
 
-    this->score_only = false;
+	this->score_only = false;
 
-    this->dump_models_to_wrl = false;
+	this->dump_models_to_wrl = false;
 
-    this->output_vertex_score = false;
+	this->output_vertex_score = false;
 
-    this->repair_mode = false;
+	this->repair_mode = false;
 
-    this->extra_cuts_x = 0.7;
-    this->extra_cuts_y = 0.1;
+	this->extra_cuts_x = 0.7;
+	this->extra_cuts_y = 0.1;
+
+	// (yh)
+	this->onlydraw = false;
+	this->save_obj = false;
+
+	this->obj_thickness = 0.0;
+	this->pad_thickness = 0.0;
+	this->inner_tri_scale = 0.0;
   }
 
   CutHeuristic heuristic;
@@ -201,6 +209,21 @@ public:
 
   // ignore all cache files
   bool force_mode;
+
+  //////////////////////////////////////////////
+  //  (yh) for showing
+  //////////////////////////////////////////////
+
+  bool onlydraw;
+  bool save_obj;
+
+  //////////////////////////////////////////////
+  //  (yh) for making a volume
+  //////////////////////////////////////////////
+
+  double obj_thickness;
+  double pad_thickness;
+  double inner_tri_scale;
 
 };
 

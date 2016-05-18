@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\libs\itree\EndPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\libs\itree\Interval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\libs\itree\RectKD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\libs\itree\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8BEB1A0B-9E6E-4994-A123-5B5E3B6A4F7E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
