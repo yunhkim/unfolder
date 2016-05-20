@@ -373,6 +373,7 @@ vector<float> MySplitter01::assignWeights(model *m, const Config& config)
 // 
 // TODO #1: This is your second splitter
 //
+// The rightmost ascending edge unfold
 
 vector<float> MySplitter02::assignWeights(model *m, const Config& config)
 {
@@ -459,8 +460,8 @@ vector<float> MySplitter02::assignWeights(model *m, const Config& config)
 			
 			for (auto k = 0; k < 3; k++){
 				for (auto j = 0; j < 3; j++){
-					if (j == 0) mat[j][k] = c[j];
-					else if (j == 1) mat[j][k] = bv[j];
+					if (k == 0) mat[j][k] = c[j];
+					else if (k == 1) mat[j][k] = bv[j];
 					else mat[j][k] = vw[j];
 				}
 			}
@@ -470,7 +471,7 @@ vector<float> MySplitter02::assignWeights(model *m, const Config& config)
 				+ mat[0][2] * mat[1][0] * mat[2][1]	
 				- mat[0][2] * mat[1][1] * mat[2][0]	
 				- mat[0][1] * mat[1][0] * mat[2][2]	
-				- mat[2][0] * mat[1][2] * mat[2][1];
+				- mat[0][0] * mat[1][2] * mat[2][1];
 
 
 

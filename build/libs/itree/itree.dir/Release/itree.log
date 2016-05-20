@@ -1,5 +1,5 @@
-﻿Build started 2016-05-18 오전 3:34:07.
-     1>Project "C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\libs\itree\itree.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2016-05-20 오전 2:59:29.
+     1>Project "C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\libs\itree\itree.vcxproj" on node 2 (Rebuild target(s)).
      1>CustomBuild:
          Building Custom Rule C:/Users/winYunhyk/devel/hw_yunhyeong/unfolder/libs/itree/CMakeLists.txt
          CMake does not need to re-run because C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\libs\itree\CMakeFiles\generate.stamp is up-to-date.
@@ -15,8 +15,8 @@
          itree.dir\Release\RectKD.obj
      1>Interval.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
          itree.vcxproj -> C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\libs\itree\Release\itree.lib
-     1>Done Building Project "C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\libs\itree\itree.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\winYunhyk\devel\hw_yunhyeong\unfolder\build\libs\itree\itree.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.26
+Time Elapsed 00:00:05.53
